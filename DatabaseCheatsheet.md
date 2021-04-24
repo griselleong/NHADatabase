@@ -52,3 +52,14 @@ UPDATE TABLE student
 SET email = 'jane@website.com'
 WHERE name = 'Jane'
 ```
+
+### Using Joins: Query Data from two different tables
+```
+SELECT 
+student.name AS student_name,
+student.course,
+teacher.name AS teacher_name
+FROM student
+INNER JOIN teacher
+  ON student.course = teacher.course
+```
