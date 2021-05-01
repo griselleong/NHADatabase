@@ -53,7 +53,8 @@ SET email = 'jane@website.com'
 WHERE name = 'Jane'
 ```
 
-### Using Joins: Query Data from two different tables
+### Using Joins: Inner Join - Query Data from two different tables
+##### Inner Join merges the tables, and only selects if ON value exists in both tables
 ```
 SELECT 
 student.name AS student_name,
@@ -63,3 +64,55 @@ FROM student
 INNER JOIN teacher
   ON student.course = teacher.course
 ```
+
+### Using Joins: Inner Join with a WHERE clause for filtering
+```
+SELECT 
+student.name AS student_name,
+student.course,
+teacher.name AS teacher_name
+FROM student
+INNER JOIN teacher
+  ON student.course = teacher.course
+WHERE
+  student.name = 'Mickey Mouse'
+```
+### Using Joins: Inner Join - Query Data from three different tables
+##### Inner Join merges the tables, and only selects if ON value exists in both tables
+```
+SELECT
+  student.name AS student_name,
+  teacher.name AS teacher_name,
+  course.description AS course_description
+FROM student
+INNER JOIN teacher 
+	on student.course = teacher.course
+INNER JOIN course
+	ON student.course = course.name
+ORDER BY
+	student.name DESC, teacher.name ASC
+```
+### Using Joins: Left Join - Query Data from two different tables
+##### Left Join merges the tables, and all rows from the FROM table are selected even if the ON value does not exist on the second table
+```
+SELECT
+  student.name AS student_name,
+  teacher.name AS teacher_name,
+  course.description AS course_description
+FROM student
+LEFT JOIN teacher 
+	on student.course = teacher.course
+```
+### Using Joins: Left Join - Query Data from three different tables
+##### Left Join merges the tables, and all rows from the FROM table are selected even if the ON value does not exist on the second table
+```
+SELECT
+  student.name AS student_name,
+  teacher.name AS teacher_name,
+  course.description AS course_description
+FROM student
+LEFT JOIN teacher 
+	on student.course = teacher.course
+LEFT JOIN course
+	ON student.course = course.name
+ ```
