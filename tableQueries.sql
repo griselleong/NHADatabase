@@ -47,7 +47,8 @@ VALUES
 ('Daisy', 'Duck'),
 ('Peter', 'Pan'),
 ('Mulan', 'Fa'),
-('Simba', 'Lion');
+('Simba', 'Lion'),
+('Darth', 'Vader');
 
 INSERT INTO StudentCourseHistory (student_id, course_id, school_year, semester)
 vALUES 
