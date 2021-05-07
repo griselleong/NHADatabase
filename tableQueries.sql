@@ -47,9 +47,9 @@ VALUES
 ('Daisy', 'Duck'),
 ('Peter', 'Pan'),
 ('Mulan', 'Fa'),
-('Simba', 'Lion')
+('Simba', 'Lion');
 
-insert into StudentCourseHistory (student_id, course_id, school_year, semester)
+INSERT INTO StudentCourseHistory (student_id, course_id, school_year, semester)
 vALUES 
 (1, 1, 2018, 'FALL'),
 (1, 2, 2019, 'SPRING'),
