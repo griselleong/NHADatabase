@@ -16,6 +16,13 @@ CREATE TABLE Course (
  description VARCHAR 
 );
 
+CREATE TABLE StudentCourseHistory (
+  student_id INTEGER,
+  course_id INTEGER,
+  school_year INTEGER,
+  semester VARCHAR 
+);
+
 INSERT INTO Course ('name','description')
 VALUES 
 ('HTML', 'Learn about basic web development'),
