@@ -48,3 +48,43 @@ VALUES
 ('Peter', 'Pan'),
 ('Mulan', 'Fa'),
 ('Simba', 'Lion')
+
+insert into StudentCourseHistory (student_id, course_id, school_year, semester)
+vALUES 
+(1, 1, 2018, 'FALL'),
+(1, 2, 2019, 'SPRING'),
+(1, 3, 2019, 'FALL'),
+(1, 4, 2020, 'SPRING'),
+(1, 5, 2020, 'FALL'),
+
+(2, 1, 2018, 'FALL'),
+(2, 2, 2019, 'FALL'),
+(2, 3, 2019, 'FALL'),
+(2, 5, 2020, 'SPRING'),
+
+(3, 1, 2018, 'FALL'),
+(3, 2, 2019, 'SPRING'),
+(3, 3, 2019, 'FALL'),
+(3, 5, 2020, 'FALL'),
+
+(4, 1, 2020, 'FALL'),
+(4, 2, 2019, 'SPRING'),
+(4, 3, 2020, 'SPRING'),
+(4, 4, 2018, 'SPRING'),
+(4, 5, 2018, 'FALL'),
+
+(5, 2, 2019, 'SPRING'),
+(5, 3, 2020, 'FALL'),
+(5, 4, 2020, 'SPRING'),
+
+(6, 1, 2020, 'FALL'),
+(6, 2, 2020, 'SPRING'),
+(6, 3, 2019, 'FALL'),
+(6, 4, 2019, 'SPRING'),
+(6, 5, 2018, 'FALL'),
+
+(7, 1, 2020, 'FALL'),
+(7, 2, 2018, 'SPRING'),
+(7, 3, 2019, 'FALL'),
+(7, 4, 2019, 'FALL'),
+(7, 5, 2019, 'FALL')
