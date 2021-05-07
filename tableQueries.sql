@@ -30,3 +30,13 @@ VALUES
 ('Laura',3),
 ('Griselle',4),
 ('Ricky',5);
+
+INSERT INTO Student (first_name, last_name)
+VALUES
+('Minnie','Mouse'),
+('Mickey','Mouse'),
+('Donald','Duck'),
+('Daisy','Duck'),
+('Peter','Pan'),
+('Mulan', 'Fa'),
+('Simba', 'Lion')
