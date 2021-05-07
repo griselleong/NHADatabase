@@ -33,6 +33,7 @@ VALUES
 
 INSERT INTO Teacher ('name','course_id')
 VALUES
+('Griselle',1),
 ('Laura',2),
 ('Laura',3),
 ('Griselle',4),
