@@ -12,8 +12,8 @@ CREATE TABLE Teacher (
 );
 
 CREATE TABLE Course (
-	id INTEGER PRIMARY KEY,
- 	name VARCHAR,
- 	description VARCHAR 
+ id INTEGER PRIMARY KEY,
+ name VARCHAR,
+ description VARCHAR 
 );
 
