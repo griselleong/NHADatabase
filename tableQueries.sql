@@ -17,3 +17,10 @@ CREATE TABLE Course (
  description VARCHAR 
 );
 
+INSERT INTO Course ('name','description')
+VALUES 
+('HTML', 'Learn about basic web development'),
+('Javascript','Learn to make interactions on the web'),
+('Python','Learn another language besides Javascript'),
+('Database','Learn about data - coolest class ever!'),
+('Startup 101','Learn about building your own startup')
