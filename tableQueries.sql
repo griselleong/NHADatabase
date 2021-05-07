@@ -1,8 +1,7 @@
 CREATE TABLE Student (
  id INTEGER PRIMARY KEY,
  first_name VARCHAR,
- last_name VARCHAR,
- current_course_id INTEGER
+ last_name VARCHAR
 );
 
 CREATE TABLE Teacher (
