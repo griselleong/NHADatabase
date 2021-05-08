@@ -177,7 +177,7 @@ WHERE
 ### INNER/LEFT JOIN + BETWEEN: Merge Data based on one value being between two other values
 ```
 SELECT
-  name as student_name,
+  name AS student_name,
   ageGroup.description as age_group_description
 FROM student
 INNER JOIN ageGroup
@@ -187,7 +187,7 @@ INNER JOIN ageGroup
 ### LIMIT: Select the top N of a result set
 ```
  SELECT 
-   name as student_name
+   name AS student_name
  FROM student
  ORDER BY name ASC
  LIMIT 1
@@ -197,9 +197,19 @@ INNER JOIN ageGroup
 ### GROUP BY + COUNT: Count of result sets, if the results are grouped by a column
 ```
  SELECT
-   teacher.name as teacher_name,
-   count(*)
+   teacher.name AS teacher_name,
+   count(*) AS
  FROM teacher
  GROUP BY
    teacher.name
+```
+### HAVING: WHERE clause, but after you do an GROUP BY
+```
+ SELECT
+   teacher.name AS teacher_name,
+   count(*) AS count_class_per_teacher
+ FROM teacher
+ GROUP BY
+   teacher.name
+ HAVING count_class_per_teacher > 1
 ```
