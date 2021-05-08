@@ -183,3 +183,23 @@ FROM student
 INNER JOIN ageGroup
   on student.age BETWEEN ageGroup.min_age AND ageGroup.max_age
 ```
+
+### LIMIT: Select the top N of a result set
+```
+ SELECT 
+   name as student_name
+ FROM student
+ ORDER BY name ASC
+ LIMIT 1
+
+```
+
+### GROUP BY + COUNT: Count of result sets, if the results are grouped by a column
+```
+ SELECT
+   teacher.name as teacher_name,
+   count(*)
+ FROM teacher
+ GROUP BY
+   teacher.name
+```
