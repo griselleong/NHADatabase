@@ -213,3 +213,10 @@ INNER JOIN ageGroup
    teacher.name
  HAVING count_class_per_teacher > 1
 ```
+
+### SELECT DISTINCT: Select Unique result
+```
+SELECT
+  DISTINCT last_name
+FROM student
+```
